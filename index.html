@@ -6,7 +6,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta name="theme-color" content="#7a2e0e">
+  <meta name="description" content="Mobile-first naam jap counter with a 108-bead mala.">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
   <title>Naam Jap Counter</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" href="icons/icon-192.png">
+  <link rel="apple-touch-icon" href="icons/icon-192.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
@@ -17,7 +23,7 @@
 
   <main class="app">
 
-    <header>
+    <header class="top">
       <select id="mantraSelect" aria-label="Select mantra"></select>
       <p id="mantraText" class="mantra-text"></p>
     </header>

@@ -8,8 +8,16 @@ const mantras = [
   { id: "ram", name: "श्री राम", text: "श्री राम जय राम जय जय राम" },
   { id: "shiv", name: "शिव", text: "ॐ नमः शिवाय" },
   { id: "ganesh", name: "गणेश", text: "ॐ गं गणपतये नमः" },
-  { id: "mahamrityunjay", name: "महामृत्युंजय", text: "ॐ त्र्यम्बकं यजामहे सुगन्धिं पुष्टिवर्धनम्" },
-  { id: "krishna", name: "श्री कृष्ण", text: "हरे कृष्ण हरे कृष्ण कृष्ण कृष्ण हरे हरे" },
+  {
+    id: "mahamrityunjay",
+    name: "महामृत्युंजय",
+    text: "ॐ त्र्यम्बकं यजामहे सुगन्धिं पुष्टिवर्धनम्",
+  },
+  {
+    id: "krishna",
+    name: "श्री कृष्ण",
+    text: "हरे कृष्ण हरे कृष्ण कृष्ण कृष्ण हरे हरे",
+  },
   { id: "gayatri", name: "गायत्री", text: "ॐ भूर्भुवः स्वः तत्सवितुर्वरेण्यं" },
 ];
 
@@ -97,3 +105,5 @@ document.addEventListener("visibilitychange", () => {
 });
 
 render();
+
+if ("serviceWorker" in navigator) addEventListener("load", () => navigator.serviceWorker.register("sw.js"));
